@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-cls {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0E1413;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem 1rem;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title h1 {
+  font-size: clamp(1.2rem, 2vw, 2rem);
+}
+
+/* Step sections */
+.main-area {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  text-align: center;
+  background-color: #1a1f1c;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Step title */
+.step-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* Image upload */
+.image-upload-area  {
+  margin: 1.5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.image-upload-area .upload-img {
+  width: clamp(100px, 20vw, 150px);
+  height: clamp(100px, 20vw, 150px);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #4ade80;
+}
+
+/* Inputs */
+.input-area,
+.input-areas {
+  margin-top: 1.0rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.input-area label {
+  font-size: 1rem;
+  
+  color: #cbd5e1;
+  font-weight: 500;
+  text-align: left;         /* 👈 This ensures left alignment */
+  width: 100%;              /* 👈 Makes sure it spans the full input width */
+  display: block;           /* 👈 Keeps it above the input */
+}
+
+
+.input-area input,
+.input-areas input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-area input:focus,
+.input-areas input:focus {
+  outline: none;
+  border-color: #4ade80;
+  box-shadow: 0 0 6px rgba(74, 222, 128, 0.5);
+  background-color: #121918;
+  color: #fff;
+}
+
+/* Buttons */
+button,
+.chakra-button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-btn-2 {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.add-btn-2 button {
+  width: 100%;
+  max-width: 200px;
+  background-color: #16a34a;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 50px;
+}
+
+.add-btn-2 button:hover {
+  background-color: #22c55e;
+}
+
+/* Step counter */
+.step-counter {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Tasks */
+.tasks-done {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 5;
+}
+
+progress {
+  margin-top: 1.5rem;
+  width: 100%;
+  max-width: 300px;
+  height: 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .main-content {
+    padding: 2rem;
+  }
+
+  .main-area {
+    padding: 2rem;
+  }
+
+  .step-title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-content {
+    width: 70%;
+  }
+
+  .step-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Large desktops / IPS monitors */
+@media (min-width: 1440px) {
+  .main-content {
+    width: 60%;
+    max-width: 1200px;
+  }
+
+  .title h1 {
+    font-size: clamp(1.8rem, 1.8vw, 2.2rem);
+  }
+
+  .step-title {
+    font-size: 1.6rem;
+  }
+
+  .image-upload-area .upload-img {
+    width: clamp(180px, 15vw, 240px);
+    height: clamp(180px, 15vw, 240px);
+  }
+
+  progress {
+    max-width: 500px;
+    height: 20px;
+  }
+
+  button,
+  .chakra-button {
+    font-size: 1.2rem;
+    padding: 0.8rem 1.6rem;
+  }
+}
+
+/* TVs and Ultra-wide monitors */
+@media (min-width: 1920px) {
+  .main-content {
+    width: 55%;
+    max-width: 1400px;
+    padding: 3rem;
+  }
+
+  .title h1 {
+    font-size: clamp(2rem, 2.2vw, 2.6rem);
+  }
+
+  .step-title {
+    font-size: 1.8rem;
+  }
+
+  .image-upload-area .upload-img {
+    width: clamp(220px, 12vw, 280px);
+    height: clamp(220px, 12vw, 280px);
+  }
+
+  .input-area input,
+  .input-areas input {
+    max-width: 500px;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+  }
+
+  progress {
+    max-width: 600px;
+    height: 24px;
+  }
+
+  button,
+  .chakra-button {
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+  }
+
+  .tasks-done {
+    font-size: 1.3rem;
+    line-height: 2;
+  }
+}
+
+/* 4K TVs */
+@media (min-width: 2560px) {
+  .main-content {
+    width: 50%;
+    max-width: 1600px;
+    padding: 4rem;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .step-title {
+    font-size: 2rem;
+  }
+
+  .image-upload-area .upload-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  progress {
+    max-width: 800px;
+    height: 28px;
+  }
+
+  button,
+  .chakra-button {
+    font-size: 1.5rem;
+    padding: 1.2rem 2.5rem;
+  }
+}

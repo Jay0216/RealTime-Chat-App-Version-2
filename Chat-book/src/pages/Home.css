@@ -1,0 +1,152 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main-home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #0E1413;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.navbar{
+    display: flex;
+    padding-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.navbar .btns{
+    margin-right: 70px;
+}
+
+.navbar .logo a{
+    margin-left: 70px;
+    color: #fff;
+}
+
+
+.btns .signup-btn-1{
+    margin-left: 40px;
+}
+
+
+
+.content-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 100px;
+    color: #fff;
+    margin-left: 60px;
+}
+
+
+.content-row .content-img{
+    margin-left: 40px;
+}
+
+.content-row .content{
+    margin-top: 138px;
+}
+
+
+.content h1{
+    font-size: 30px;
+}
+
+
+.content .seemore-btn{
+    margin-top: 50px;
+}
+
+
+@media (max-width: 600px){
+
+    .main-home{
+        flex-direction: column-reverse;
+    }
+
+    .content-row{
+        
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-right: 53px;
+        
+    }
+
+
+    .btns{
+        position: fixed;
+        background-color: #506965;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: -300px;
+        text-align: center;
+        z-index: 1;
+        transition: 1s;
+        padding-top: 20px;
+        border-radius: 30px 0 0 30px;
+        
+    }
+
+    .btns Button{
+        width: 50px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .menu-btn-area{
+       
+        margin-right: 80px;
+        display: block;
+    }
+
+    .navbar .btns{
+        
+        margin-right: 0%;
+        margin-bottom: 20px;
+    }
+
+    .navbar .logo a{
+        
+        
+        color: #fff;
+    }
+
+    
+
+    .menu-icon-1{
+        margin-top: 10px;
+        
+    }
+
+    .content{
+        padding-right: 10px;
+    }
+
+    .content h1{
+        font-size: 20px;
+    }
+
+    .content-img{
+        margin-right: 50px;
+        width: 300px;
+    }
+
+    .seemore-btn{
+        width: 100px;
+        padding-right: 20px;
+    }
+}
